@@ -43,7 +43,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         restart()
-        restartButton.isHidden = true
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -87,6 +86,7 @@ class ViewController: UIViewController {
     }
     
     func restart() {
+        restartButton.isHidden = true
         storyIndex = 1
         topButton.setTitle(answer1a, for: .normal)
         bottomButton.setTitle(answer1b, for: .normal)
